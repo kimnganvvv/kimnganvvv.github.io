@@ -3,42 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiêu Đề Trang Web Của Bạn</title>
-    
-    <style>
-        /* Một chút CSS cơ bản để trang nhìn dễ chịu hơn */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style>
+    <title>Portfolio | Nguyen Thi Kim Ngan - Data Analyst Intern</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chèn thêm biểu tượng để trang web chuyên nghiệp hơn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Chào mừng đến với trang web của tôi</h1>
-        <p>Đây là một đoạn văn bản mẫu. Bạn có thể thay đổi nội dung này bằng bất cứ thứ gì bạn muốn.</p>
-        
-        <h2>Các bước tiếp theo:</h2>
-        <ul>
-            <li>Học thêm về các thẻ HTML (h1, p, div, a...).</li>
-            <li>Thêm màu sắc và bố cục bằng CSS.</li>
-            <li>Tạo hiệu ứng tương tác bằng JavaScript.</li>
-        </ul>
-    </div>
+    <!-- THANH ĐIỀU HƯỚNG (NAVBAR) -->
+    <header class="navbar">
+        <div class="logo">NganNguyen<span>.data</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#skills">Kỹ Năng</a></li>
+                <li><a href="#projects">Dự Án</a></li>
+                <li><a href="#experience">Hoạt Động</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script>
-        console.log("Trang web đã tải thành công!");
-    </script>
+    <!-- PHẦN BANNER CHÍNH (HERO SECTION) -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h3>Xin chào, tôi là</h3>
+            <h1>Nguyễn Thị Kim Ngân</h1>
+            <h2>Data Analyst Intern / IT Student</h2>
+            <p>Sinh viên năm 3 ngành Công nghệ thông tin với nền tảng kỹ thuật vững chắc và tư duy phân tích mạnh mẽ. Đam mê xử lý dữ liệu và xây dựng các báo cáo trực quan hóa giúp doanh nghiệp đưa ra quyết định.</p>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> ngan.tknguyen05@gmail.com</span>
+                <span><i class="fas fa-phone"></i> 0367924328</span>
+                <span><i class="fas fa-map-marker-alt"></i> Nhà Bè, TP. Hồ Chí Minh</span>
+            </div>
+            <a href="#projects" class="btn">Xem Dự Án Của Tôi</a>
+        </div>
+    </section>
+
+    <!-- PHẦN GIỚI THIỆU & HỌC VẤN (ABOUT & EDUCATION) -->
+    <section id="about" class="about-section">
+        <div class="section-title">
+            <h2>Giới Thiệu & Học Vấn</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-box">
+                <h3>Mục Tiêu Nghề Nghiệp</h3>
+                <p>Tìm kiếm vị trí Thực tập sinh Phân tích Dữ liệu (Data Analyst Intern) để tích lũy kinh nghiệm thực tế, nâng cao kỹ năng xử lý dữ liệu và hỗ trợ đắc lực cho đội ngũ trong việc làm sạch dữ liệu cũng như xây dựng các báo cáo trực quan.</p>
+                <h3>Chứng Chỉ</h3>
+                <ul class="cert-list">
+                    <li><i class="fas fa-certificate"></i> <strong>Big Data</strong> - Samsung Innovation Campus (SIC) | 2024</li>
+                </ul>
+            </div>
+            <div class="edu-box">
+                <h3><i class="fas fa-graduation-cap"></i> Đại học Mở TP.HCM</h3>
+                <p class="timeline">2023 - Hiện tại</p>
+                <p><strong>Chuyên ngành:</strong> Công nghệ thông tin</p>
+                <p><strong>GPA:</strong> 3.12 / 4.0</p>
+                <h4>Môn học tiêu biểu:</h4>
+                <div class="course-badges">
+                    <span class="badge">Cơ sở dữ liệu (4.0/4.0)</span>
+                    <span class="badge">Machine Learning (4.0/4.0)</span>
+                    <span class="badge">Lập trình CSDL (3.5/4.0)</span>
+                    <span class="badge">Trí tuệ nhân tạo (3.0/4.0)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN KỸ NĂNG (SKILLS) -->
+    <section id="skills" class="skills-section">
+        <div class="section-title">
+            <h2>Kỹ Năng Kỹ Thuật</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Python</h3>
+                <p>Pandas, NumPy, Seaborn, Matplotlib phục vụ phân tích dữ liệu.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>SQL</h3>
+                <p>Truy vấn cơ bản, các câu lệnh JOINs, Group By, tối ưu hóa CSDL.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-bar skill-icon"></i>
+                <h3>Power BI & Excel</h3>
+                <p>Trực quan hóa dữ liệu, Dashboard tương tác, Pivot Tables, Power Query.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain skill-icon"></i>
+                <h3>Kỹ Năng Mềm</h3>
+                <p>Tư duy phân tích, Làm việc nhóm, Quản lý thời gian, Tự học.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN DỰ ÁN (PROJECTS) -->
+    <section id="projects" class="projects-section">
+        <div class="section-title">
+            <h2>Dự Án Cá Nhân & Học Thuật</h2>
+        </div>
+        <div class="projects-list">
+            <!-- Dự án 1 -->
+            <div class="project-item">
+                <div class="proj-header">
+                    <h3>Personal Finance Management Database</h3>
+                    <span class="proj-date">02/2026 - 05/2026</span>
+                </div>
+                <p class="proj-role"><strong>Vai trò:</strong> Database Engineer & Developer (Cá nhân)</p>
+                <p class="proj-desc">Ứng dụng web quản lý tài chính cá nhân dạng e-commerce giúp theo dõi giao dịch, quản lý ngân sách tháng và tỷ lệ tiết kiệm.</p>
+                <ul>
+                    <li>Thiết kế, tối ưu hóa sơ đồ cơ sở dữ liệu quan hệ đảm bảo toàn vẹn dữ liệu.</li>
+                    <li>Xây dựng Backend bằng ASP.NET MVC, Entity Framework Code First.</li>
+                    <li>Sử dụng truy vấn SQL tối ưu để quản lý nhật ký giao dịch chính xác.</li>
+                </ul>
+                <div class="proj-tech">
+                    <span>C#</span><span>ASP.NET MVC</span><span>SQL Server</span><span>HTML/CSS</span>
+                </div>
+            </div>
+
+            <!-- Dự án 2 -->
+            <div class="project-item">
+                <div class="proj-header">
+                    <h3>Fake News Detections</h3>
+                    <span class="proj-date">02/2026</span>
+                </div>
+                <p class="proj-role"><strong>Vai trò:</strong> Data & NLP Analyst (Nhóm 2 người)</p>
+                <p class="proj-desc">Nền tảng tra cứu thông tin thông minh và xác thực độ tin cậy của tin tức, hỗ trợ tìm kiếm văn bản pháp luật.</p>
+                <ul>
+                    <li>Viết script cào dữ liệu (Web-scraping) bằng Python để thu thập văn bản luật và tin tức.</li>
+                    <li>Làm sạch, tiền xử lý tập dữ liệu văn bản lớn, loại bỏ nhiễu để huấn luyện mô hình.</li>
+                    <li>Triển khai hệ thống Advanced RAG để tối ưu hóa việc truy xuất và xác thực văn bản.</li>
+                </ul>
+                <div class="proj-tech">
+                    <span>Python</span><span>NLP</span><span>RAG</span><span>Scikit-learn</span><span>Pandas</span>
+                </div>
+            </div>
+
+            <!-- Dự án 3 -->
+            <div class="project-item">
+                <div class="proj-header">
+                    <h3>Air Pollution Prediction - CNN-BiLSTM</h3>
+                    <span class="proj-date">06/2025 - 03/2026</span>
+                </div>
+                <p class="proj-role"><strong>Vai trò:</strong> Data Analyst & Developer (Nhóm 2 người)</p>
+                <p class="proj-desc">Hệ thống phân tích dự đoán chỉ số chất lượng không khí (AQI) dựa trên dữ liệu chuỗi thời gian (Time-series data).</p>
+                <ul>
+                    <li>Thực hiện phân tích khám phá dữ liệu (EDA) tìm kiếm các yếu tố tương quan ảnh hưởng tới AQI.</li>
+                    <li>Xử lý dữ liệu khuyết thiếu phức tạp bằng Python.</li>
+                    <li>Xây dựng và tinh chỉnh mô hình học sâu (Deep Learning) CNN-BiLSTM phục vụ dự báo chuẩn xác.</li>
+                </ul>
+                <div class="proj-tech">
+                    <span>Python</span><span>Pandas</span><span>NumPy</span><span>Deep Learning</span><span>Seaborn</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN HOẠT ĐỘNG & GIẢI THƯỞNG (ACTIVITIES & AWARDS) -->
+    <section id="experience" class="activity-section">
+        <div class="section-title">
+            <h2>Hoạt Động Ngoài Giờ & Giải Thưởng</h2>
+        </div>
+        <div class="activity-grid">
+            <div class="activity-box">
+                <h3><i class="fas fa-users text-blue"></i> Hoạt Động Tiêu Biểu</h3>
+                <div class="act-item">
+                    <h4>Phó Ban Trang Trí & Kỹ Thuật - Chiến dịch Xuân Tình Nguyện</h4>
+                    <p class="timeline">12/2024 - 01/2025</p>
+                    <p>Quản lý đội ngũ thiết kế, thi công không gian sự kiện quy mô lớn, tối ưu hóa ngân sách và supplies.</p>
+                </div>
+                <div class="act-item">
+                    <h4>Cộng Tác Viên Sinh Viên - Khoa CNTT</h4>
+                    <p class="timeline">04/2024 - Hiện tại</p>
+                    <p>Điều phối sự kiện khoa (>100 sinh viên), đón tiếp đại biểu doanh nghiệp, hỗ trợ tổ chức lễ trao giải.</p>
+                </div>
+                <div class="act-item">
+                    <h4>Tình Nguyện Viên - Mùa Hè Xanh & Hiến Máu Nhân Đạo</h4>
+                    <p>Tổ chức đêm hội cho trẻ em vùng sâu, huấn luyện kỹ năng mềm, hiến máu tích cực vì cộng đồng.</p>
+                </div>
+            </div>
+
+            <div class="award-box">
+                <h3><i class="fas fa-trophy text-orange"></i> Danh Hiệu & Giải Thưởng</h3>
+                <ul class="award-list">
+                    <li><i class="fas fa-star text-orange"></i> Danh hiệu "Thanh niên tiên tiến làm theo lời Bác" & Học bổng</li>
+                    <li><i class="fas fa-medal"></i> Giải Ba - Cuộc thi Giải pháp Phần mềm Khoa CNTT</li>
+                    <li><i class="fas fa-award"></i> Học bổng Khuyến khích Học tập (Nhiều học kỳ)</li>
+                    <li><i class="fas fa-award"></i> Học bổng Tài năng ĐH Mở TP.HCM</li>
+                    <li><i class="fas fa-award"></i> Giải Khuyến khích Cầu lông Khoa CNTT</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHÂN TRANG (FOOTER) -->
+    <footer>
+        <p>&copy; 2026 Nguyen Thi Kim Ngan. Cảm ơn bạn đã ghé thăm Portfolio của tôi!</p>
+        <div class="footer-interests">
+            Sở thích: <i class="fas fa-music"></i> Nghe nhạc | <i class="fas fa-film"></i> Xem phim | <i class="fas fa-running"></i> Chạy bộ | <i class="fas fa-table-tennis-tennis"></i> Cầu lông
+        </div>
+    </footer>
+
 </body>
 </html>
